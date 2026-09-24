@@ -1334,7 +1334,7 @@ html&gt;body{padding:0}&lt;/style&gt;
 #steele-timeline .st-kicker{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--quiet);font-weight:600}
 #steele-timeline h2{font-size:clamp(25px,4vw,34px);font-weight:600;letter-spacing:-.035em;line-height:1.2;margin:7px 0 10px}
 #steele-timeline .st-meta{font-size:13px;color:var(--quiet);display:flex;gap:8px 20px;flex-wrap:wrap}
-#steele-timeline .st-months{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px;margin:26px 0}
+#steele-timeline .st-months{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:6px;margin:26px 0}
 #steele-timeline button{font:inherit;color:inherit}
 #steele-timeline .st-month{min-height:83px;text-align:left;border:1px solid var(--line);background:var(--surface);border-radius:var(--radius);padding:12px 9px}
 #steele-timeline .st-month[aria-pressed=true]{background:var(--selected);border-color:var(--blue);box-shadow:inset 0 -3px var(--blue)}
@@ -1365,19 +1365,24 @@ html&gt;body{padding:0}&lt;/style&gt;
 @container(max-width:520px){#steele-timeline .st-months{grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}#steele-timeline .st-event{grid-template-columns:65px 1fr;gap:14px}#steele-timeline .st-event:before{left:69px}#steele-timeline .st-event:after{left:65px}#steele-timeline .st-trigger{padding:12px}#steele-timeline .st-unplaced{grid-template-columns:1fr;gap:5px}}
 @media(max-width:420px){#steele-timeline{padding:18px 12px;border-radius:10px}}
 &lt;/style&gt;
-&lt;header&gt;&lt;div class=&quot;st-kicker&quot;&gt;Dokken Built · Project chronology&lt;/div&gt;&lt;h2&gt;2787 S Steele St&lt;/h2&gt;&lt;div class=&quot;st-meta&quot;&gt;&lt;span&gt;March–September 2026&lt;/span&gt;&lt;span&gt;Denver · 2026-LOG-0007636&lt;/span&gt;&lt;/div&gt;&lt;/header&gt;
+&lt;header&gt;&lt;div class=&quot;st-kicker&quot;&gt;Dokken Built · Project chronology&lt;/div&gt;&lt;h2&gt;2787 S Steele St&lt;/h2&gt;&lt;div class=&quot;st-meta&quot;&gt;&lt;span&gt;January–September 2026&lt;/span&gt;&lt;span&gt;Denver · 2026-LOG-0007636&lt;/span&gt;&lt;/div&gt;&lt;/header&gt;
 &lt;nav class=&quot;st-months&quot; aria-label=&quot;Choose timeline month&quot;&gt;&lt;/nav&gt;
 &lt;div class=&quot;st-section&quot;&gt;&lt;h3 class=&quot;st-heading&quot;&gt;&lt;/h3&gt;&lt;span class=&quot;st-help&quot;&gt;Hover to preview · Click to expand&lt;/span&gt;&lt;/div&gt;
 &lt;ol class=&quot;st-events&quot; aria-label=&quot;Monthly milestones&quot;&gt;&lt;/ol&gt;
-&lt;div class=&quot;st-unplaced&quot;&gt;&lt;strong&gt;Dates to confirm&lt;/strong&gt;&lt;div&gt;Under contract · Closing&lt;p&gt;Acquisition, LLC transfer, and payoff coordination continued in early September; the exact contract and closing dates remain unconfirmed.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p class=&quot;st-source&quot;&gt;From the project conversation through September 24, 2026. Date ranges and approximate timing are preserved. Entries are grouped by their starting month.&lt;/p&gt;
+&lt;div class=&quot;st-unplaced&quot;&gt;&lt;strong&gt;Date to confirm&lt;/strong&gt;&lt;div&gt;Closing · Around February 27, 2026&lt;p&gt;The closing date is approximate, based on Jay’s recollection.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p class=&quot;st-source&quot;&gt;From the project conversation through September 24, 2026, including Jay’s acquisition and report-receipt updates. Date ranges and approximate timing are preserved. Entries are grouped by their starting month.&lt;/p&gt;
 &lt;/div&gt;
 &lt;script&gt;
 (()=&gt;{
 const root=document.getElementById(&#x27;steele-timeline&#x27;);
 const events=[
+[&#x27;Jan 27&#x27;,&#x27;1&#x27;,&#x27;Property under contract&#x27;,&#x27;Acquisition&#x27;,&#x27;Date supplied by Jay&#x27;,&#x27;The property went under contract on Tuesday, January 27, 2026.&#x27;],
+[&#x27;Feb 3&#x27;,&#x27;2&#x27;,&#x27;Survey ordered&#x27;,&#x27;Due diligence&#x27;,&#x27;Date supplied by Jay&#x27;,&#x27;The survey was ordered on February 3, 2026.&#x27;],
+[&#x27;Around Feb 27&#x27;,&#x27;2&#x27;,&#x27;Closing — approximate&#x27;,&#x27;Acquisition&#x27;,&#x27;Approximate date · to confirm&#x27;,&#x27;Jay recalls that closing was around February 27, 2026. The exact closing date remains to be confirmed.&#x27;],
 [&#x27;Mar 23–Apr&#x27;,&#x27;3&#x27;,&#x27;Due diligence underway&#x27;,&#x27;Due diligence&#x27;,&#x27;Date range&#x27;,&#x27;The project was being treated as a scrape and new build. Asbestos sampling and demolition planning were underway.&#x27;],
-[&#x27;Apr 29–30&#x27;,&#x27;4&#x27;,&#x27;Asbestos report issued&#x27;,&#x27;Due diligence&#x27;,&#x27;Date range&#x27;,&#x27;The final asbestos sampling report was issued and acknowledged.&#x27;],
+[&#x27;Apr 29–30&#x27;,&#x27;4&#x27;,&#x27;Asbestos report issued&#x27;,&#x27;Due diligence&#x27;,&#x27;Date range&#x27;,&#x27;The earlier project record places issuance of the final asbestos sampling report around April 29–30. Jay subsequently supplied May 1 as the report-receipt date.&#x27;],
+[&#x27;May 1&#x27;,&#x27;5&#x27;,&#x27;Sampling report received&#x27;,&#x27;Due diligence&#x27;,&#x27;Receipt date supplied by Jay&#x27;,&#x27;Jay reports receiving a sampling report on May 1, 2026. This receipt is recorded separately from the earlier April report-issuance entry.&#x27;],
+[&#x27;May 1&#x27;,&#x27;5&#x27;,&#x27;Specialist sampling report received&#x27;,&#x27;Due diligence&#x27;,&#x27;Receipt date supplied by Jay&#x27;,&#x27;Jay also reports receiving a specialist sampling report on May 1, 2026. The report description is retained as supplied.&#x27;],
 [&#x27;Jun 16–24&#x27;,&#x27;6&#x27;,&#x27;Remediation approved and scheduled&#x27;,&#x27;Due diligence&#x27;,&#x27;Date range&#x27;,&#x27;Asbestos remediation was approved and scheduled. The CDPHE start was set for early July; this is a scheduled start, not confirmation of completion.&#x27;],
 [&#x27;Jun 29–Jul 14&#x27;,&#x27;6&#x27;,&#x27;Architectural design review&#x27;,&#x27;Design&#x27;,&#x27;Date range&#x27;,&#x27;Architectural plans were in final internal design review, bringing the design to a point where it could be handed off to structural engineering.&#x27;],
 [&#x27;Early Jul&#x27;,&#x27;7&#x27;,&#x27;Structural engineering authorized&#x27;,&#x27;Engineering&#x27;,&#x27;Approximate timing&#x27;,&#x27;Structural engineering was effectively authorized to proceed once the architectural plans were sufficiently settled.&#x27;],
@@ -1401,20 +1406,20 @@ const events=[
 [&#x27;Sep 24&#x27;,&#x27;9&#x27;,&#x27;Second-round comments returned&#x27;,&#x27;Second review&#x27;,&#x27;Dated milestone&#x27;,&#x27;Second-round Residential comments were returned. Remaining issues were narrower, including changing structural terminology from ADU to Art Studio and adding setback/fascia verification dimensions.&#x27;],
 [&#x27;Sep 24&#x27;,&#x27;9&#x27;,&#x27;Second-round corrections underway&#x27;,&#x27;Second review&#x27;,&#x27;Revisions made · structural update requested&#x27;,&#x27;Additional side, front, and rear setback dimensions, fascia dimensions, and Art Studio dimensions were addressed. Jacob was asked for an updated stamped structural set changing the ADU label to Art Studio. Structural review was approved around this stage; final resubmittal and permit approval are not established by this record.&#x27;]
 ];
-const months=[&#x27;March&#x27;,&#x27;April&#x27;,&#x27;May&#x27;,&#x27;June&#x27;,&#x27;July&#x27;,&#x27;August&#x27;,&#x27;September&#x27;];
+const months=[&#x27;January&#x27;,&#x27;February&#x27;,&#x27;March&#x27;,&#x27;April&#x27;,&#x27;May&#x27;,&#x27;June&#x27;,&#x27;July&#x27;,&#x27;August&#x27;,&#x27;September&#x27;];
 const nav=root.querySelector(&#x27;.st-months&#x27;),list=root.querySelector(&#x27;.st-events&#x27;),heading=root.querySelector(&#x27;.st-heading&#x27;);
-let month=&#x27;8&#x27;,expanded=null;
+let month=&#x27;1&#x27;,expanded=null;
 const settings={spacing:12,corners:10};
 const applySettings=()=&gt;{root.style.setProperty(&#x27;--gap&#x27;,settings.spacing+&#x27;px&#x27;);root.style.setProperty(&#x27;--radius&#x27;,settings.corners+&#x27;px&#x27;)};
-function save(){const api=window.openai;if(api?.setWidgetState)Promise.resolve(api.setWidgetState({modelContent:{month:months[Number(month)-3],selectedMilestone:expanded===null?null:events[expanded][2]},privateContent:{month,expanded}})).catch(()=&gt;{});}
+function save(){const api=window.openai;if(api?.setWidgetState)Promise.resolve(api.setWidgetState({modelContent:{month:months[Number(month)-1],selectedMilestone:expanded===null?null:events[expanded][2]},privateContent:{month,expandedTitle:expanded===null?null:events[expanded][2]}})).catch(()=&gt;{});}
 function render(){
 nav.replaceChildren();
-months.forEach((name,i)=&gt;{const value=String(i+3),count=events.filter(e=&gt;e[1]===value).length,b=document.createElement(&#x27;button&#x27;);b.type=&#x27;button&#x27;;b.className=&#x27;st-month cursor-interaction&#x27;;b.setAttribute(&#x27;aria-pressed&#x27;,String(month===value));b.setAttribute(&#x27;aria-label&#x27;,name+&#x27; 2026, &#x27;+count+&#x27; milestones&#x27;);b.innerHTML=&#x27;&lt;span class=&quot;st-month-name&quot;&gt;&#x27;+name.slice(0,3)+&#x27;&lt;/span&gt;&lt;span class=&quot;st-count&quot;&gt;&#x27;+count+&#x27; &#x27;+(count===1?&#x27;event&#x27;:&#x27;events&#x27;)+&#x27;&lt;/span&gt;&#x27;;b.onclick=()=&gt;{month=value;expanded=null;render();nav.children[i].focus();save()};nav.append(b)});
-heading.textContent=months[Number(month)-3]+&#x27; 2026&#x27;;list.replaceChildren();
+months.forEach((name,i)=&gt;{const value=String(i+1),count=events.filter(e=&gt;e[1]===value).length,b=document.createElement(&#x27;button&#x27;);b.type=&#x27;button&#x27;;b.className=&#x27;st-month cursor-interaction&#x27;;b.setAttribute(&#x27;aria-pressed&#x27;,String(month===value));b.setAttribute(&#x27;aria-label&#x27;,name+&#x27; 2026, &#x27;+count+&#x27; milestones&#x27;);b.innerHTML=&#x27;&lt;span class=&quot;st-month-name&quot;&gt;&#x27;+name.slice(0,3)+&#x27;&lt;/span&gt;&lt;span class=&quot;st-count&quot;&gt;&#x27;+count+&#x27; &#x27;+(count===1?&#x27;event&#x27;:&#x27;events&#x27;)+&#x27;&lt;/span&gt;&#x27;;b.onclick=()=&gt;{month=value;expanded=null;render();nav.children[i].focus();save()};nav.append(b)});
+heading.textContent=months[Number(month)-1]+&#x27; 2026&#x27;;list.replaceChildren();
 events.forEach((e,i)=&gt;{if(e[1]!==month)return;const li=document.createElement(&#x27;li&#x27;);li.className=&#x27;st-event&#x27;;li.innerHTML=&#x27;&lt;div class=&quot;st-date&quot;&gt;&#x27;+e[0]+&#x27;&lt;/div&gt;&lt;div class=&quot;st-card&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;st-trigger cursor-interaction&quot; aria-expanded=&quot;&#x27;+(expanded===i)+&#x27;&quot; aria-controls=&quot;st-detail-&#x27;+i+&#x27;&quot;&gt;&lt;span&gt;&lt;span class=&quot;st-title&quot;&gt;&#x27;+e[2]+&#x27;&lt;/span&gt;&lt;span class=&quot;st-category&quot;&gt;&#x27;+e[3]+&#x27;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;st-plus&quot; aria-hidden=&quot;true&quot;&gt;&#x27;+(expanded===i?&#x27;−&#x27;:&#x27;+&#x27;)+&#x27;&lt;/span&gt;&lt;/button&gt;&lt;div class=&quot;st-detail&quot; id=&quot;st-detail-&#x27;+i+&#x27;&quot; &#x27;+(expanded===i?&#x27;&#x27;:&#x27;hidden&#x27;)+&#x27;&gt;&lt;small&gt;&#x27;+e[4]+&#x27;&lt;/small&gt;&#x27;+e[5]+&#x27;&lt;/div&gt;&lt;/div&gt;&#x27;;const b=li.querySelector(&#x27;button&#x27;);if(expanded!==i)b.setAttribute(&#x27;data-tooltip&#x27;,e[5]);b.onclick=()=&gt;{expanded=expanded===i?null:i;render();list.querySelector(&#x27;[aria-controls=&quot;st-detail-&#x27;+i+&#x27;&quot;]&#x27;).focus();save()};list.append(li)});
 if(!list.children.length){const li=document.createElement(&#x27;li&#x27;);li.className=&#x27;st-empty&#x27;;li.textContent=&#x27;No dated milestones established for this month.&#x27;;list.append(li)}
 }
-function restore(state){const s=state?.privateContent;if(s&amp;&amp;months[Number(s.month)-3]){month=String(s.month);expanded=Number.isInteger(s.expanded)&amp;&amp;events[s.expanded]?.[1]===month?s.expanded:null;}render()}
+function restore(state){const s=state?.privateContent;if(s&amp;&amp;months[Number(s.month)-1]){month=String(s.month);const found=events.findIndex(e=&gt;e[1]===month&amp;&amp;e[2]===s.expandedTitle);expanded=found&lt;0?null:found;}render()}
 root.addEventListener(&#x27;keydown&#x27;,event=&gt;{if(event.key===&#x27;Escape&#x27;&amp;&amp;expanded!==null){const id=expanded;expanded=null;render();list.querySelector(&#x27;[aria-controls=&quot;st-detail-&#x27;+id+&#x27;&quot;]&#x27;).focus();save()}});
 restore(window.openai?.widgetState);
 window.addEventListener(&#x27;openai:set_globals&#x27;,event=&gt;{if(event.detail?.globals?.widgetState)restore(event.detail.globals.widgetState)});
