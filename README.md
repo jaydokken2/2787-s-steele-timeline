@@ -1,7 +1,9 @@
-# 2787 S Steele St
+# 2787 S Steele St — Pre-construction Timeline
 
-Interactive project timeline, January–September 2026.
+Interactive January–September 2026 Gantt with 14 workstreams and 35 dated events.
 
-Milestones are reconstructed from the project conversation through September 24, 2026, including acquisition and report-receipt dates supplied by Jay. Closing around February 27 remains approximate.
+Rows distinguish requested, started/authorized, and completed/delivered dates. Bars represent elapsed intervals, not continuous labor. Gold marks highlight key milestones. Open diamonds denote targets or expected outcomes.
 
-Seven priority milestones are highlighted separately from supporting monthly events. Asbestos bid approved June 17; completion recalled around July 17. Sewer cut target around July 20 is not confirmed complete. Final plan-review approval expected September 25 is not yet confirmed. Utility cuts remain unconfirmed.
+Asbestos bids requested May 1; bid approved June 17; completion recalled around July 17. Gas and electric cuts requested June 17; completed around July 30. Sewer cut target around July 20 is not confirmed complete. Final plan-review approval expected September 25 is not yet confirmed.
+
+Compression opportunities are investigative prompts, not proven delays or guaranteed savings. Intervals overlap and should not be added together.
